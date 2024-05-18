@@ -1,0 +1,4 @@
+{
+    "/api/TrainApp/GetAllPassengers": "/passengers",
+    "/api/TrainApp/AddUpdatePassengers": "/passengers"
+  }

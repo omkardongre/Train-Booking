@@ -1,0 +1,90 @@
+{
+  "GetAllPassengers": {
+    "message": "",
+    "result": true,
+    "data": [
+      {
+        "passengerID": 1,
+        "firstName": "priyaunk",
+        "lastName": "pandeuy",
+        "email": "pp@up.com",
+        "phone": "78454544",
+        "password": "pppp"
+      },
+      {
+        "passengerID": 2,
+        "firstName": "string",
+        "lastName": "string",
+        "email": "string",
+        "phone": "string",
+        "password": "string"
+      }
+    ]
+  },
+  "GetAllStations": {
+    "message": "",
+    "result": true,
+    "data": [
+      {
+        "stationID": 1,
+        "stationName": "Thrissur",
+        "stationCode": "TCR"
+      },
+      {
+        "stationID": 2,
+        "stationName": "TIRCHCHIRAPPALLI JUNCTION",
+        "stationCode": "TPJ"
+      },
+      {
+        "stationID": 5,
+        "stationName": "SHIMOGA",
+        "stationCode": "SME"
+      },
+      {
+        "stationID": 18,
+        "stationName": "HUBLI",
+        "stationCode": "UBL"
+      },
+      {
+        "stationID": 20,
+        "stationName": "Solapur",
+        "stationCode": "SLP"
+      },
+      {
+        "stationID": 79,
+        "stationName": "BELGUAM",
+        "stationCode": "BGM"
+      }
+    ]
+  },
+  "AddUpdatePassengers": [
+    {
+      "passengerID": 0,
+      "firstName": "Omkar ",
+      "lastName": "1",
+      "email": "omkardongre5@gmail.com",
+      "phone": "z",
+      "password": "z",
+      "id": 1
+    },
+    {
+      "passengerID": 0,
+      "firstName": "Omkar ",
+      "lastName": "D",
+      "email": "omkardongre5@gmail.com",
+      "phone": "123123",
+      "password": "12",
+      "id": 2
+    },
+    {
+      "passengerID": 0,
+      "firstName": "Omkar ",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "password": "",
+      "id": 3
+    }
+  ],
+  "login": []
+}

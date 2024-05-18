@@ -1,0 +1,40 @@
+<div class="container mx-auto px-4 py-8">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row">
+        
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h1 class="text-3xl font-bold mb-6">Book Your Train Tickets</h1>
+          <form>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div>
+                <label for="from" class="block text-gray-700 font-bold mb-2">From Station</label>
+                <select [(ngModel)]="travelObj.fromStationID" name="fromStation" id="from" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                  <option *ngFor = "let station of stationList" [value]="station.stationID">{{station.stationName}}</option>
+                </select>
+                <!-- {{travelObj | json}} -->
+                {{travelObj.fromStationID}}
+              </div>
+              <div>
+                <label for="to" class="block text-gray-700 font-bold mb-2">To Station</label>
+                <select [(ngModel)]="travelObj.toStationID" name="toStation" id="from" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                  <option *ngFor = "let station of stationList" [value]="station.stationID">{{station.stationName}}</option>
+                </select>
+              </div>
+              <div>
+                <label for="date" class="block text-gray-700 font-bold mb-2">Date of Travel</label>
+                <input [(ngModel)]="travelObj.dateOfTravel" name="dateOfTravel" type="date" id="date" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+              </div>
+            </div>
+            <div class="text-center mt-8">
+              <button (click)="onSearch()" type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <img src="assets/banner-2.png" alt="Banner" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </div>

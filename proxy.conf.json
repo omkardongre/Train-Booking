@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+    "target": "https://freeapi.miniprojectideas.com/api/TrainApp/GetAllStations",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
